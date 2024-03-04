@@ -391,6 +391,9 @@ button {
   font-weight: 500;
 }
 
+.height_150px {
+  height: 150px;
+}
 
 @media (max-width: 1000px) {
   .responsive_navbar form input {

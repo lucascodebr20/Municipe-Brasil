@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mogi das Cruzes</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="JavaScript/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="JavaScript/script.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary responsive_navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-3" href="index.html">
+        <img src="IMG/Logo/Logo-Completo-Horizontal.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Como Funciona</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Valores e Objetivos</a>
+          </li>
+        </ul>
+        <form class="d-flex pe-5" role="search">
+          <input class="form-control me-2 ps-3 pe-3" type="search" placeholder="Pesquise o Município"
+            aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">PESQUISAR</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Prefeitura -->
+
+  <section class="fundo_section_prefeitura container-fluid">
+    <div class="container-fluid">
+      <div class="row text-center p-3">
+        <div class="col remover_coluna"></div>
+        <div class="col logo_cidade">
+          <img class="imagem-fluid" src="MogiDasCruzes/Logo_IMG/logo-mogi-das-cruzes.jpg" alt="">
+        </div>
+        <div class="col-6 text-start text-light reponsive_prefeitura">
+          <a href="index.html" class="text_link_branco">
+            <h1>Mogi das Cruzes</h1>
+          </a>
+          <p>São Paulo</p>
+        </div>
+        <div class="col remover_coluna"></div>
+        <div class="col remover_coluna"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row container d-flex m-auto">
+      <div class="col">
+        <div class="flex_colum">
+          <div class="largura_responsiva_unica">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card1">
+                    <div class="card__content1">
+                      <br>
+                      <div class="img_card">
+                        <img src="IMG/Icones/contrucao-obra.png" alt="">
+                      </div>
+                      <div class="text_card">
+                        <h4>Obras em Andamento</h4>
+                        <h2>02</h2>
+                        <p>Atualizado dia 22/02/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card1">
+                    <div class="card__content1">
+                      <br>
+                      <div class="img_card">
+                        <img src="IMG/Icones/obra-parada.png" alt="">
+                      </div>
+                      <div class="text_card">
+                        <h4>Obras em Atraso</h4>
+                        <h2 style="margin-top: 28px;">0</h2>
+                        <p>Atualizado dia 22/02/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card1">
+                    <div class="card__content1" style="background-color: #39519e;">
+                      <br>
+                      <div class="img_card">
+                        <img src="IMG/Icones/pedido-melhoria.png" alt="">
+                      </div>
+                      <div class="text_card">
+                        <h4>Pedidos de Melhoria</h4>
+                        <h2>5</h2>
+                        <p>Atualizado dia 22/02/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="card1">
+                      <div class="card__content1" style="background-color: #39519e;">
+                        <br>
+                        <div class="img_card">
+                          <img src="IMG/Icones/pedido-aberto.png" alt="">
+                        </div>
+                        <div class="text_card">
+                          <h4>Pedidos em Aberto</h4>
+                          <h2 style="margin-top: 28px;">5</h2>
+                          <p>Atualizado dia 22/02/2024</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="card1">
+                      <div class="card__content1" style="background-color: #5c496e;">
+                        <br>
+                        <div class="img_card">
+                          <img src="IMG/Icones/acesso-informacao.png" alt="">
+                        </div>
+                        <div class="text_card">
+                          <h4>Acesso a Informação</h4>
+                          <h2>0</h2>
+                          <p>Atualizado dia 22/02/2024</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="accordion border border-dark rounded" id="accordionExample">
+            <div class="accordion-item ">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Licitações
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <table class="table table-striped table-bordered" id="myTable">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="tabela_numero">Numero</th>
+                        <th scope="col" class="tabela_descricao">Descrição</th>
+                        <th scope="col" class="tabela_valor">Valor</th>
+                        <th scope="col" class="tabela_indicador">Indicador</th>
+                        <th scope="col" class="tabela_button1"></th>
+                        <th scope="col" class="tabela_button_mobile"></th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-start">
+                      <tr>
+                        <th scope="row">
+                          <span class="me-3">0262/2023</span>
+                          <button class="btn btn-primary button_tabela_mobile" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                            Abrir Licitação </button>
+                          <div class="collapse mt-2" id="collapseExample1">
+                            <div class="card card-body">
+                              <p>Numero: 0262/2023</p>
+                              <p>Descrição: Compra de Medicamento</p>
+                              <p>Valor: R$ 60.000</p>
+                              <a href="#">
+                                <p>Ver Mais detalhes</p>
+                              </a>
+                            </div>
+                          </div>
+                        </th>
+                        <td class="tabela_descricao">Compra de Medicamento</td>
+                        <td class="tabela_valor">R$ 60.000</td>
+                        <td class="tabela_indicador">>></td>
+                        <td colspan="2" class="button_mais"><button> + </button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <span class="me-3">0262/2023</span>
+                          <button class="btn btn-primary button_tabela_mobile" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                            Abrir Licitação </button>
+                          <div class="collapse mt-2" id="collapseExample2">
+                            <div class="card card-body">
+                              <p>Numero: 0262/2023</p>
+                              <p>Descrição: Compra de Medicamento</p>
+                              <p>Valor: R$ 60.000</p>
+                              <a href="#">
+                                <p>Ver Mais detalhes</p>
+                              </a>
+                            </div>
+                          </div>
+                        </th>
+                        <td class="tabela_descricao">Compra de Medicamento</td>
+                        <td class="tabela_valor">R$ 60.000</td>
+                        <td class="tabela_indicador">>></td>
+                        <td colspan="2" class="button_mais"><button> + </button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <span class="me-3">0262/2023</span>
+                          <button class="btn btn-primary button_tabela_mobile" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                            Abrir Licitação </button>
+                          <div class="collapse mt-2" id="collapseExample3">
+                            <div class="card card-body">
+                              <p>Numero: 0262/2023</p>
+                              <p>Descrição: Compra de Medicamento</p>
+                              <p>Valor: R$ 60.000</p>
+                              <a href="#">
+                                <p>Ver Mais detalhes</p>
+                              </a>
+                            </div>
+                          </div>
+                        </th>
+                        <td class="tabela_descricao">Compra de Medicamento</td>
+                        <td class="tabela_valor">R$ 60.000</td>
+                        <td class="tabela_indicador">>></td>
+                        <td colspan="2" class="button_mais"><button> + </button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Pedidos de Acesso a Informação
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <table class="table table-striped table-bordered" id="myTable">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="tabela_numero">Numero</th>
+                      <th scope="col" class="tabela_descricao_2">Descrição</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-start">
+                    <tr>
+                      <th scope="row">0262/2023</th>
+                      <td class="tabela_descricao_2">Solicitamos acesso às informações referentes ao
+                        pedido 2526/2023, uma vez que durante a licitação não foram identificadas as
+                        marcas dos produtos adquiridos. Agradecemos sua colaboração.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">0262/2023</th>
+                      <td class="tabela_descricao_2">Gostaríamos de solicitar acesso às informações
+                        pertinentes ao pedido 2526/2023. Durante o processo de licitação, identificamos a ausência das
+                        marcas dos produtos adquiridos, o que levanta questões importantes sobre a transparência
+                        do procedimento. Agradecemos antecipadamente
+                        por sua pronta cooperação e esforços para esclarecer essa questão.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">0262/2023</th>
+                      <td class="tabela_descricao_2">Em busca da transparência e integridade em nossas operações,
+                        solicitamos acesso às informações relacionadas ao pedido 2526/2023. Reconhecemos a
+                        importância de documentar detalhadamente cada etapa do processo de aquisição e estamos
+                        empenhados em assegurar que todas as informações relevantes estejam disponíveis.
+                        Agradecemos sua atenção e colaboração neste assunto.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 coluna_information">
+        <p>Cidade: <a href="" class="text-decoration-none text-black">Mogi das Cruzes</a></p>
+        <p>Estado: <a href="" class="text-decoration-none text-black">São Paulo</a></p>
+        <p>Numero de Habitantes: 450.785</p>
+        <p>Cordenador: Sem Inscrição</p>
+        <p>Moderação: Sem Inscrição</p>
+        <div class="row text-center">
+          <div class="col">
+            <a href="Licitacao.html">
+              <button title="Licitação">
+                <span class="btn_coluna_informacao_icone">
+                  <img src="IMG/Icones/martelo-licitacao.png" alt="">
+                </span>
+              </button>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" target="_blank">
+              <button title="Obras e Projetos da Cidade">
+                <span class="btn_coluna_informacao_icone">
+                  <img src="IMG/Icones/obras-rodoviarias.png" alt="">
+                </span>
+              </button>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#">
+              <button title="Pedidos de Melhoria">
+                <span class="btn_coluna_informacao_icone">
+                  <img src="IMG/Icones/pedido-melhoria-black.png" alt="">
+                </span>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <a href="#">
+              <button title="Acesso a Informação">
+                <span class="btn_coluna_informacao_icone">
+                  <img src="IMG/Icones/acesso-informacao-black.png" alt="">
+                </span>
+              </button>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" target="_blank">
+              <button title="Prestação de Contas Municipe Brasil">
+                <span class="btn_coluna_informacao_icone">
+                  <img src="IMG/Icones/prestacao-de-contas.png" alt="">
+                </span>
+              </button>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" target="_blank">
+              <button title="Licitação Mogi das Cruzes (Link Externo)">
+                <span class="btn_coluna_informacao_icone">
+                  <img src="IMG/Icones/martelo-licitacao-5.png" alt="">
+                </span>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="flex_colum mt-3">
+          <button type="button" class="button_verde_quadrado mt-3">Pedir Melhoria</Button>
+          <button type="button" class="button_vermelho_quadrado mt-3 ">Abrir Reclamação</Button>
+          <button type="button" class="button_verde_quadrado mt-3">Seja Apoiador !</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+
+  <section style="background-color: #39519e;">
+    <div class="container">
+      <H1 class="text-light text-center p-3">Pedidos dos Municipes</H1>
+      <div class="swiper mySwiper p-3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="corpo-card-obras-pedidos">
+              <p class="badeg_cima">Em Andamento</p>
+              <img src="MogiDasCruzes/Melhorias_IMG/569133/Parque.jpg" class="card-img-top img-fluid" alt="...">
+              <p class="text-start mt-2 fw-bold">Protocolo: 569133  
+              </p>
+              <p class="text-start">
+                A praça Reni Paulo Santos na Vila Nova Aparecida, está precisando manutenção urgente!
+                Está faltando o Balanço para crianças que quebrou e trocar os equipamentos que estão
+                deteriorados. Precisa cuidar das árvores também que sofre com ações dos
+                vândalos.
+              </p>
+              <a href="#" class="text-decoration-none">
+                <button class="button_card">Ver Solicitação</button>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="corpo-card">
+              <img src="IMG/Mogi-das-Cruzes/Obras/569133/Parque.jpg" class="card-img-top img-fluid" alt="...">
+              <p class="texto-limitado">
+                A praça Reni Paulo Santos na Vila Nova Aparecida, está precisando manutenção urgente!
+                Está faltando o Balanço para crianças que quebrou e trocar os equipamentos que estão
+                deteriorados. Precisa cuidar das árvores também que sofre com ações dos
+                vândalos (criançada largadas na Rua)
+                A luminária está caindo tambem Ponto de Referência: Praça ATI
+              </p>
+              <a href="#" class="text-decoration-none">
+                <button class="button_card">Ver Solicitação</button>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="corpo-card">
+              <img src="IMG/Mogi-das-Cruzes/Obras/569133/Parque.jpg" class="card-img-top img-fluid" alt="...">
+              <p class="texto-limitado">
+                A praça Reni Paulo Santos na Vila Nova Aparecida, está precisando manutenção urgente!
+                Está faltando o Balanço para crianças que quebrou e trocar os equipamentos que estão
+                deteriorados. Precisa cuidar das árvores também que sofre com ações dos
+                vândalos (criançada largadas na Rua)
+                A luminária está caindo tambem Ponto de Referência: Praça ATI
+              </p>
+              <a href="#" class="text-decoration-none">
+                <button class="button_card">Ver Solicitação</button>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="corpo-card">
+              <img src="IMG/Mogi-das-Cruzes/Obras/569133/Parque.jpg" class="card-img-top img-fluid" alt="...">
+              <p class="texto-limitado">
+                A praça Reni Paulo Santos na Vila Nova Aparecida, está precisando manutenção urgente!
+                Está faltando o Balanço para crianças que quebrou e trocar os equipamentos que estão
+                deteriorados. Precisa cuidar das árvores também que sofre com ações dos
+                vândalos (criançada largadas na Rua)
+                A luminária está caindo tambem Ponto de Referência: Praça ATI
+              </p>
+              <a href="#" class="text-decoration-none">
+                <button class="button_card">Ver Solicitação</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <br>
+    </div>
+  </section>
+
+  <br>
+
+  <section>
+    <div class="banner_faça_parte">
+
+    </div>
+
+  </section>
+
+  <br>
+
+  <section style="background-color: #3e4a6e;">
+    <div class="container">
+      <H1 class="text-light text-center p-3">Obras em Andamento</H1>
+      <div class="swiper mySwiper p-3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="corpo-card-obras-pedidos">
+              <p class="badeg_cima">Em Andamento</p>
+              <img src="MogiDasCruzes/Obras_IMG/eco_ponto/003.jfif" class="card-img-top img-fluid" alt="...">
+              <div class="ps-2">
+                <H6 class="text-start pt-3">
+                  <strong>Contrução de Ecoponto (Cezar de Souza)</strong>
+                </H6>
+                <div class="text-start m-0">
+                  <p>Bairro: Cezar de Souza
+                  <p>Inicio: Setembro 2023 </p>
+                  <p>Conclusão: Maio 2024</p>
+                  <p>Valor Total: R$ 737.861,90</p>
+                </div>
+              </div>
+              <a href="#" class="text-decoration-none">
+                <button class="button_card">Acompanhar Obra</button>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="corpo-card-obras-pedidos">
+              <p class="badeg_cima">Em Andamento</p>
+              <img src="MogiDasCruzes/Obras_IMG/creche_botujuru/001.jfif" class="card-img-top img-fluid" alt="...">
+              <div class="ps-2">
+                <H6 class="text-start pt-3">
+                  <strong>Contrução de Crechê no Botujuru - EDU 251</strong>
+                </H6>
+                <div class="text-start m-0">
+                  <p>Bairro: Botujuru
+                  <p>Inicio: Junho 2023 </p>
+                  <p>Conclusão: JUnho 2024</p>
+                  <p>Valor Total: R$ 4.909.886,22</p>
+                </div>
+              </div>
+              <a href="Obras/creche_botujuru.html" class="text-decoration-none">
+                <button class="button_card">Acompanhar Obra</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <br>
+    </div>
+  </section>
+
+  <br>
+
+  <footer class="background_black p-3 max">
+    <div class="reponsive_flex_row max_widht_1000px m-auto">
+      <div class="align-items-center ajuste_texto_footer">
+        <p>Contato</p>
+        <p>contato@municipebrasil.com.br</p>
+        <a href="" class="text-decoration-none text-light">
+          <p>Termos de Uso e Privacidade</p>
+        </a>
+      </div>
+      <div class="icon_redesocial">
+        <p>Nossas Redes Sociais</p>
+        <a href="https://www.reddit.com/r/MunicipeBrasil/"><img class="rounded ms-2"
+            src="IMG/Icones - Rede Social/Reddit-Icon.jpg" alt="Ícone Reddit"></a>
+        <a href="https://www.reddit.com/r/MunicipeBrasil/"><img class="rounded ms-2"
+            src="IMG/Icones - Rede Social/Discord-Icon.jpg" alt="Ícone Discord"></a>
+        <a href="https://www.reddit.com/r/MunicipeBrasil/"><img class="rounded ms-2"
+            src="IMG/Icones - Rede Social/facebook.jpg" alt="Ícone Instagram"></a>
+        <a href="https://www.reddit.com/r/MunicipeBrasil/"><img class="rounded ms-2"
+            src="IMG/Icones - Rede Social/Instragram.jpg" alt="Ícone Facebook"></a>
+      </div>
+    </div>
+  </footer>
+  <div class="container-fluid background_black text-center pt-3 pb-1">
+    <p>Todos os direitos reservados ao Municipe Brasil </p>
+  </div>
+
+  <script>
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        450: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        }
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>

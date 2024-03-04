@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, html{
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.background_black {
+  background-color: #333333;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.text_link_branco {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.text_link_branco:hover {
+  text-decoration: none;
+  color: #b9b9b9;
+}
+
+.reponsive_flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_colum {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon_redesocial {
+  margin-left: 300px;
+}
+
+.icon_redesocial img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.icon_redesocial img {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.icon_redesocial img:hover {
+  transform: scale(1.2);
+  border-radius: 5px;
+}
+
+.max_widht_1000px {
+  max-width: 1000px;
+}
+
+.largura_responsiva_unica {
+  max-width: 790px;
+  margin: auto;
+}
+
+.logo_cidade img {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  border: #ffffff;
+}
+
+.fundo_section_prefeitura {
+  background-image: url(fundo-mogi-das-cruzes.jpg);
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.coluna_information {
+  max-width: 300px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: #000000;
+  border-style: solid;
+  padding: 15px;
+  font-family: "Roboto";
+  border-radius: 0px;
+}
+
+
+/* BOTÃO PERSONALIZADO COLUNA DIREITA INFORAMAÇÃO*/
+
+.btn_coluna_informacao_icone {
+  width: 50px;
+  height: 50px;
+  float: left;
+  transition: .5s ease-in-out; 
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.btn_coluna_informacao_icone img {
+  width: 25px;
+  height: 25px;
+  
+}
+
+.btn_coluna_informacao_icone:before,
+.btn_coluna_informacao_icone:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: transparent;
+  transition: .5s ease-in-out; 
+}
+
+.btn_coluna_informacao_icone:before {
+  bottom: 0;
+  left: 0;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  transform: translateX(100%);
+}
+
+.btn_coluna_informacao_icone:after {
+  top: 0;
+  left: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  transform: translateX(-100%);
+}
+
+.btn_coluna_informacao_icone:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.btn_coluna_informacao_icone:hover:before {
+  border-color: #262626;
+  height: 50px;
+  transform: translateX(0);
+}
+
+.btn_coluna_informacao_icone:hover:after {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+}
+
+button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.button_verde_quadrado {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #307e1c;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #307e1c;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.button_verde_quadrado:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #307e1c;
+  z-index: -1;
+}
+
+.button_verde_quadrado:hover, button:focus {
+  color: white;
+}
+
+.button_verde_quadrado:hover:before, button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.button_verde_quadrado:active {
+  transform: scale(0.9);
+}
+
+.button_vermelho_quadrado {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #772222;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #772222;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.button_vermelho_quadrado:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #772222;
+  z-index: -1;
+}
+
+.button_vermelho_quadrado:hover, button:focus {
+  color: white;
+}
+
+.button_vermelho_quadrado:hover:before, button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.button_vermelho_quadrado:active {
+  transform: scale(0.9);
+}
+
+/* FIM DO CSS DO BOTÃO */
+
+.swiper {
+  width: 90%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button_tabela {
+  width: 100%;
+  max-width: 100%;
+}
+
+.button_tabela_mobile,
+.tabela_valor_comparativo,
+.tabela_button_mobile,
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+.banner_faça_parte {
+  display: flex;
+  background-color: #000000;
+  margin: auto;
+  max-width: 800px;
+  height: 400px;
+  width: 100%;
+}
+
+.card1 {
+  margin: 20px auto;
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+  border: #000000;
+  border-style: solid;
+}
+
+.card__content1 {
+  background: #3e4a6e;
+  color: #ffffff;
+  border-radius: 11px;
+  width: 100%;
+  height: 100%;
+}
+
+.img_card {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  
+}
+
+.text_card {
+  margin-top: 35px;
+}
+
+.text_card h4 {
+  padding-top: 10px;
+  font-family: "Bebas Neue";
+  max-width: 150px;
+  margin: auto;
+}
+
+.text_card h2 {
+  padding-top: 10px;
+  font-family: "Bebas Neue";
+  max-width: 150px;
+  margin: auto;
+}
+
+.text_card p {
+  margin-top: 35px;
+  font-size: 12px;
+}
+
+.corpo-card-obras-pedidos {
+  width: 288px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  font-family: "Roboto";
+}
+
+.corpo-card-obras-pedidos img {
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.badeg_cima {
+  margin-bottom: -60px;
+  background-color: #000000ad;
+  color: #ffffff;
+  padding: 2px;
+  width: 50%;
+  border-radius: 10px;
+  z-index: 1;
+  margin-left: 130px;
+}
+
+.button_card {
+  background-color: #0038f0;
+  padding: 10px 40px;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Roboto";
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.button_card:hover {
+  background-color: #7492f3;
+  color: #000000;
+  font-weight: 500;
+}
+
+
+@media (max-width: 1000px) {
+  .responsive_navbar form input {
+    display: none;
+  }
+
+  .responsive_navbar form button {
+    display: none;
+  }
+  
+  .icon_redesocial {
+    margin-left: 150px;
+  }
+
+  .fundo_section_prefeitura img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .ajuste_texto_footer {
+    margin-left: 50px;
+  }
+}
+
+/* CELULAR */
+
+@media (max-width: 450px) {
+  .fundo_section_prefeitura img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .remover_coluna {
+    display: none;
+  }
+
+  .icon_redesocial {
+    margin-left: 0px;
+  }
+
+  .reponsive_flex_row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ajuste_texto_footer {
+    margin-left: 0px;
+  }
+
+  .coluna_information {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tabela_descricao,
+  .tabela_valor,
+  .tabela_indicador,
+  .button_mais,
+  .tabela_button1 {
+    display: none;
+  }
+
+  .largura_responsiva_unica {
+    margin: initial;
+  }
+
+  .button_tabela_mobile {
+    display: inline-flex;
+  }
+
+  .ajuste_teste {
+    max-width: 320px;
+    width: 150%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .ajuste_teste {
+    max-width: 300px;
+    width: 120%;
+  }
+}

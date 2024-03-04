@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licitação - Mogi das Cruzes</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JavaScript/bootstrap.min.js"></script>
+    <script src="JavaScript/script.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary responsive_navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-3" href="index.html">
+                <img src="IMG/Logo/Logo-Completo-Horizontal.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Como Funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Valores e Objetivos</a>
+                    </li>
+                </ul>
+                <form class="d-flex pe-5" role="search">
+                    <input class="form-control me-2 ps-3 pe-3" type="search" placeholder="Pesquise o Município"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">PESQUISAR</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="fundo_section_prefeitura container-fluid">
+        <div class="container-fluid">
+            <div class="row text-center p-3">
+                <div class="col remover_coluna"></div>
+                <div class="col logo_cidade">
+                    <img class="imagem-fluid" src="IMG/Mogi-das-Cruzes/Logo/logo-mogi-das-cruzes.jpg" alt="">
+                </div>
+                <div class="col-6 text-start text-light reponsive_prefeitura">
+                    <h1>Mogi das Cruzes</h1>
+                    <p>São Paulo</p>
+                </div>
+                <div class="col remover_coluna"></div>
+                <div class="col remover_coluna"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pt-3">
+        <div class="p-3">
+            <h2>Consulta de Licitações</h2>
+        </div>
+        <div>
+            <table class="table table-striped table-bordered" id="myTable">
+                <thead>
+                    <tr>
+                        <th scope="col" class="tabela_numero">Numero</th>
+                        <th scope="col" class="tabela_descricao">Descrição</th>
+                        <th scope="col" class="tabela_valor">Valor</th>
+                        <th scope="col" class="tabela_indicador">Indicador</th>
+                        <th scope="col" class="tabela_button1"></th>
+                        <th scope="col" class="tabela_button_mobile"></th>
+                    </tr>
+                </thead>
+                <tbody class="text-start">
+                    <tr>
+                        <th scope="row">
+                            <span class="me-3">0262/2023</span>
+                            <button class="btn btn-primary button_tabela_mobile" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample1" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Abrir Licitação </button>
+                            <div class="collapse mt-2" id="collapseExample1">
+                                <div class="card card-body">
+                                    <p>Numero: 0262/2023</p>
+                                    <p>Descrição: Compra de Medicamento</p>
+                                    <p>Valor: R$ 60.000</p>
+                                    <a href="#">
+                                        <p>Ver Mais detalhes</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </th>
+                        <td class="tabela_descricao">Compra de Medicamento</td>
+                        <td class="tabela_valor">R$ 60.000</td>
+                        <td class="tabela_indicador">>></td>
+                        <td colspan="2" class="button_mais"><button> + </button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <span class="me-3">0262/2023</span>
+                            <button class="btn btn-primary button_tabela_mobile" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample2" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Abrir Licitação </button>
+                            <div class="collapse mt-2" id="collapseExample2">
+                                <div class="card card-body">
+                                    <p>Numero: 0262/2023</p>
+                                    <p>Descrição: Compra de Medicamento</p>
+                                    <p>Valor: R$ 60.000</p>
+                                    <a href="#">
+                                        <p>Ver Mais detalhes</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </th>
+                        <td class="tabela_descricao">Compra de Medicamento</td>
+                        <td class="tabela_valor">R$ 60.000</td>
+                        <td class="tabela_indicador">>></td>
+                        <td colspan="2" class="button_mais"><button> + </button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <span class="me-3">0262/2023</span>
+                            <button class="btn btn-primary button_tabela_mobile" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample3" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Abrir Licitação </button>
+                            <div class="collapse mt-2" id="collapseExample3">
+                                <div class="card card-body">
+                                    <p>Numero: 0262/2023</p>
+                                    <p>Descrição: Compra de Medicamento</p>
+                                    <p>Valor: R$ 60.000</p>
+                                    <a href="#">
+                                        <p>Ver Mais detalhes</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </th>
+                        <td class="tabela_descricao">Compra de Medicamento</td>
+                        <td class="tabela_valor">R$ 60.000</td>
+                        <td class="tabela_indicador">>></td>
+                        <td colspan="2" class="button_mais"><button> + </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <style>
+        body {
+            background-color: rgb(214, 214, 214);
+        }
+    </style>
+</body>
+
+
+
+</html>

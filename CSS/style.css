@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body, html{
+body,
+html {
   height: 100%;
   background-color: #f0f0f0;
 }
@@ -30,6 +31,27 @@ body, html{
 .flex_colum {
   display: flex;
   flex-direction: column;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.ajuste_barra_pesquisa_desktop {
+  padding-right: 100px;
+}
+
+.ajuste_faca_login_desktop {
+  margin: 0 10px;
+  width: 120px;
+  text-align: center;
+  color: #000000;
+  font-weight: 500;
+}
+
+.ajuste_faca_login_desktop:hover {
+  color: #0038f0;
 }
 
 .icon_redesocial {
@@ -70,12 +92,11 @@ body, html{
 }
 
 .fundo_section_prefeitura {
-  background-image: url(fundo-mogi-das-cruzes.jpg);
+  background-image: url(fundo-mogi-das-cruzes.webp);
   background-size: cover;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 
 .coluna_information {
   max-width: 300px;
@@ -88,14 +109,13 @@ body, html{
   border-radius: 0px;
 }
 
-
 /* BOTÃO PERSONALIZADO COLUNA DIREITA INFORAMAÇÃO*/
 
 .btn_coluna_informacao_icone {
   width: 50px;
   height: 50px;
   float: left;
-  transition: .5s ease-in-out; 
+  transition: .5s ease-in-out;
   position: relative;
   display: block;
   overflow: hidden;
@@ -110,7 +130,7 @@ body, html{
 .btn_coluna_informacao_icone img {
   width: 25px;
   height: 25px;
-  
+
 }
 
 .btn_coluna_informacao_icone:before,
@@ -120,7 +140,7 @@ body, html{
   width: 100%;
   height: 4px;
   background-color: transparent;
-  transition: .5s ease-in-out; 
+  transition: .5s ease-in-out;
 }
 
 .btn_coluna_informacao_icone:before {
@@ -195,11 +215,13 @@ button {
   z-index: -1;
 }
 
-.button_verde_quadrado:hover, button:focus {
+.button_verde_quadrado:hover,
+button:focus {
   color: white;
 }
 
-.button_verde_quadrado:hover:before, button:focus:before {
+.button_verde_quadrado:hover:before,
+button:focus:before {
   transition: 0.5s all ease;
   left: 0;
   right: 0;
@@ -241,11 +263,13 @@ button {
   z-index: -1;
 }
 
-.button_vermelho_quadrado:hover, button:focus {
+.button_vermelho_quadrado:hover,
+button:focus {
   color: white;
 }
 
-.button_vermelho_quadrado:hover:before, button:focus:before {
+.button_vermelho_quadrado:hover:before,
+button:focus:before {
   transition: 0.5s all ease;
   left: 0;
   right: 0;
@@ -261,6 +285,7 @@ button {
 .swiper {
   width: 90%;
   height: 100%;
+  z-index: 1;
 }
 
 .swiper-slide {
@@ -287,17 +312,39 @@ button {
 .tabela_valor_comparativo,
 .tabela_button_mobile,
 .swiper-button-next,
-.swiper-button-prev {
+.swiper-button-prev,
+.desaparecer_desktop {
   display: none;
 }
 
 .banner_faça_parte {
   display: flex;
-  background-color: #000000;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 1px 0px #000000, 2px 2px 2px 1px #000000;
   margin: auto;
   max-width: 800px;
-  height: 400px;
+  width: 90%;
+  padding: 50px;
+  font-weight: 400;
+}
+
+.banner_faça_parte p {
+  max-width: 450px;
+  margin: -10px auto 30px auto;
+}
+
+.banner_faça_parte form {
+  max-width: 450px;
   width: 100%;
+  margin: auto;
+}
+
+.banner_faça_parte form button {
+  max-width: 450px;
+  width: 100%;
+  font-weight: 500;
 }
 
 .card1 {
@@ -321,7 +368,7 @@ button {
   width: 50px;
   height: 50px;
   margin: auto;
-  
+
 }
 
 .text_card {
@@ -395,6 +442,99 @@ button {
   height: 150px;
 }
 
+#menuMobile {
+  flex-direction: column;
+  position: fixed;
+  float: right;
+  top: 25px;
+  right: 25px;
+  margin-left: 30px;
+  z-index: 99999;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuMobile input {
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#menuMobile span {
+  display: flex;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 6px;
+  position: relative;
+  background: #2939cc;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), 
+  background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuMobile span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuMobile span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuMobile input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #2939cc;
+}
+
+#menuMobile input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuMobile input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menuArea {
+  position: absolute;
+  width: 300px;
+  height: 110vh;
+  box-shadow: 0 0 10px #3a3a3a;
+  margin: -100px 0 0 -180px;
+  padding: 30px;
+  padding-top: 110px;
+  background-color: #f7f7f7;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  list-style-type: none;
+}
+
+#menuArea li {
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+#menuArea li a {
+  text-decoration: none;
+  color: #000000;
+  opacity: 1;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: 200ms;
+}
+
+#menuMobile input:checked~ul {
+  transform: none;
+}
+
 @media (max-width: 1000px) {
   .responsive_navbar form input {
     display: none;
@@ -403,7 +543,7 @@ button {
   .responsive_navbar form button {
     display: none;
   }
-  
+
   .icon_redesocial {
     margin-left: 150px;
   }
@@ -421,6 +561,11 @@ button {
 /* CELULAR */
 
 @media (max-width: 450px) {
+
+  .fundo_section_prefeitura {
+    margin-top: 100px;
+  }
+
   .fundo_section_prefeitura img {
     width: 100px;
     height: 100px;
@@ -449,26 +594,49 @@ button {
 }
 
 @media screen and (max-width: 450px) {
+
   .tabela_descricao,
   .tabela_valor,
   .tabela_indicador,
   .button_mais,
-  .tabela_button1 {
+  .tabela_button1,
+  .desaparecer_mobile {
     display: none;
-  }
+}
 
-  .largura_responsiva_unica {
-    margin: initial;
-  }
+  .desaparecer_desktop,
+  .swiper-button-next,
+  .swiper-button-prev {
+  display: block;
+}
 
-  .button_tabela_mobile {
-    display: inline-flex;
-  }
+nav {
+  position:fixed;
+  background: #ececec;
+  z-index: 2;
+  margin-top: -100px;
+}
 
-  .ajuste_teste {
-    max-width: 320px;
-    width: 150%;
-  }
+nav img {
+  width: 150px;
+}
+
+.banner_faça_parte {
+  padding: 20px;
+}
+
+.largura_responsiva_unica {
+  margin: initial;
+}
+
+.button_tabela_mobile {
+  display: inline-flex;
+}
+
+.ajuste_teste {
+  max-width: 320px;
+  width: 150%;
+}
 }
 
 @media screen and (max-width: 320px) {

@@ -442,6 +442,8 @@ button:focus:before {
   height: 150px;
 }
 
+/* CSS Responsavel pelo Menu Celuar */
+
 #menuMobile {
   flex-direction: column;
   position: fixed;
@@ -534,6 +536,43 @@ button:focus:before {
 #menuMobile input:checked~ul {
   transform: none;
 }
+
+.menuArea_btn_full_green {
+  background: #307e1c;
+  color: #ffffff;
+  font-size: 1.2em;
+  margin-left: -30px;  
+}
+
+.menuArea_btn_full_green:hover {
+  background: #225714;
+}
+
+.menuArea_btn_full_green p {
+  padding: 10px;
+  margin-left: 15px;
+}
+
+.menuArea_btn_full_red {
+  background: #9c2525;
+  color: #ffffff;
+  font-size: 1.2em;
+  margin-left: -30px;
+  text-decoration: none;
+}
+
+.menuArea_btn_full_red p {
+  padding: 10px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.menuArea_btn_full_red:hover {
+  background: #571717;
+}
+
+
+/* CSS Responsavel pelo Menu Celuar */
 
 @media (max-width: 1000px) {
   .responsive_navbar form input {

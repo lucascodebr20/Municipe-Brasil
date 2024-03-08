@@ -13,3 +13,8 @@
     width: 260px;
 }
 
+.descricao_card {
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
